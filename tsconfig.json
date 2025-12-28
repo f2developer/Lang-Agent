@@ -12,7 +12,15 @@
     "allowJs": true,
     "outDir": "./dist",
     "rootDir": ".",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "types": [
+      "node",
+      "express",
+      "cors"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
   },
   "include": [
     "**/*.ts"
