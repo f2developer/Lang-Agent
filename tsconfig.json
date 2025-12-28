@@ -4,13 +4,19 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": false,                    // ← এটা false করুন
-    "noImplicitAny": false,             // ← যোগ করুন
+    "strict": false, // ← এটা false করুন
+    "noImplicitAny": false, // ← যোগ করুন
     "skipLibCheck": true,
-    "noEmitOnError": false,             // ← যোগ করুন (এরর থাকলেও কম্পাইল করবে)
+    "noEmitOnError": false, // ← যোগ করুন (এরর থাকলেও কম্পাইল করবে)
     "resolveJsonModule": true,
-    "allowJs": true
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "."
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
