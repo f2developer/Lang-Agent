@@ -2,17 +2,20 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": false, // ← এটা false করুন
-    "noImplicitAny": false, // ← যোগ করুন
+    "strict": false,
+    "noImplicitAny": false,
     "skipLibCheck": true,
-    "noEmitOnError": false, // ← যোগ করুন (এরর থাকলেও কম্পাইল করবে)
+    "noEmitOnError": false,
     "resolveJsonModule": true,
     "allowJs": true,
+    "types": [
+      "node"
+    ],
     "outDir": "./dist",
-    "rootDir": ".",
-    "moduleResolution": "node"
+    "rootDir": "."
   },
   "include": [
     "**/*.ts"
