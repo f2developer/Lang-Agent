@@ -18,9 +18,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from typing import Optional
+
 class ChatRequest(BaseModel):
     message: str
-    threadId: str = None
+    threadId: Optional[str] = None
+    timestamp: Optional[str] = None
 
 @app.get("/")
 async def root():
